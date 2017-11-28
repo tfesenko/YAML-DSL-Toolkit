@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="com.reprezen.kaizen.editor.jsonschema.editor.JsonSchema4Editor"
+            contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor"
+            default="false"
+            id="com.reprezen.kaizen.editor.jsonschema.editor"
+            name="JSON Schema v4 Editor"
+            symbolicFontName="com.reprezen.kaizen.editor.jsonschema.editor.textfont">
+         <contentTypeBinding
+               contentTypeId="com.reprezen.kaizen.editor.jsonschema.editor.contenttype.yaml">
+         </contentTypeBinding>
+      </editor>
+   </extension>
+
+   <extension
+         point="org.eclipse.core.contenttype.contentTypes">
+      <content-type
+            base-type="org.eclipse.core.runtime.text"
+            describer="com.reprezen.kaizen.editor.jsonschema.editor.JsonSchema4ContentDescriber"
+            file-extensions="yaml"
+            default-charset="UTF-8"
+            id="com.reprezen.kaizen.editor.jsonschema.editor.contenttype.yaml"
+            name="JSON Schema v4"
+            priority="high">
+         <describer
+               class="com.reprezen.kaizen.editor.jsonschema.editor.JsonSchema4ContentDescriber">
+         </describer>
+      </content-type>
+   </extension>
+   
+  
+   <extension
+         point="org.eclipse.ui.workbench.texteditor.hyperlinkDetectorTargets">
+      <target
+            id="com.reprezen.kaizen.editor.jsonschema.editor.hyperlink.target"
+            name="JSON Schema">
+            <context type="org.eclipse.ui.texteditor.ITextEditor"/>
+      </target>
+   </extension>
+
+   <extension
+         point="org.eclipse.ui.workbench.texteditor.hyperlinkDetectors">
+      <hyperlinkDetector
+            activate="true"
+            class="com.reprezen.kaizen.editor.jsonschema.hyperlinks.JsonSchema4ReferenceHyperlinkDetector"
+            id="com.reprezen.kaizen.editor.jsonschema.editor.hyperlink.references"
+            name="Open Reference"
+            targetId="ccom.reprezen.kaizen.editor.jsonschema.editor.hyperlink.target">
+      </hyperlinkDetector>
+   </extension>
+   
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="com.reprezen.kaizen.editor.jsonschema.preferences.JsonSchema4PreferenceInitializer">
+      </initializer>
+   </extension>
+</plugin>
