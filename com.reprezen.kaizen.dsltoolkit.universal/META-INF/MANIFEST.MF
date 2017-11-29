@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: KaiZen YAML DSL Toolkit Universal Editor
+Bundle-SymbolicName: com.reprezen.kaizen.dsltoolkit.universal;singleton:=true
+Bundle-Version: 0.8.0.qualifier
+Bundle-Activator: com.reprezen.kaizen.editor.jsonschema.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.ui.editors,
+ org.eclipse.jface.text,
+ org.dadacoalition.yedit,
+ com.reprezen.swagedit.core,
+ org.eclipse.ui.ide,
+ org.eclipse.core.resources,
+ com.github.eclipsecolortheme;resolution:=optional,
+ com.google.guava;bundle-version="15.0.0",
+ com.fasterxml.jackson.core.jackson-annotations;bundle-version="2.5.0",
+ com.fasterxml.jackson.core.jackson-core;bundle-version="2.5.0",
+ com.fasterxml.jackson.core.jackson-databind;bundle-version="2.5.0",
+ com.fasterxml.jackson.dataformat.jackson-dataformat-yaml;bundle-version="2.5.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?><target name="com.reprezen.kaizen.dsltoolkit.target" sequenceNumber="1">
+<locations>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="com.reprezen.swagedit.feature.feature.group" version="0.8.0.201710301020"/>
+<repository location="http://products.reprezen.com/swagedit/0.8.0.201710301020/"/>
+</location>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.rcp.feature.group" version="4.4.2.v20150204-1700"/>
+<unit id="org.eclipse.jdt.source.feature.group" version="3.10.1.v20150204-1700"/>
+<unit id="org.eclipse.platform.sdk" version="4.4.2.M20150204-1700"/>
+<unit id="org.eclipse.pde.source.feature.group" version="3.10.1.v20150204-1700"/>
+<unit id="org.eclipse.rcp.source.feature.group" version="4.4.2.v20150204-1700"/>
+<unit id="org.eclipse.pde.feature.group" version="3.10.1.v20150204-1700"/>
+<repository location="http://download.eclipse.org/eclipse/updates/4.4"/>
+</location>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.dadacoalition.yedit.feature.feature.group" version="1.0.20"/>
+<repository location="http://products-internal.reprezen.com/yedit/1.0.20"/>
+</location>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="com.github.eclipsecolortheme.feature.feature.group" version="1.0.0.201410260308"/>
+<repository location="http://eclipse-color-theme.github.io/update/"/>
+</location>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.xtend.sdk.feature.group" version="2.7.3.v201411190455"/>
+<repository location="http://download.eclipse.org/releases/luna"/>
+</location>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.slf4j.api" version="1.7.2.v20121108-1250"/>
+<unit id="com.google.guava" version="15.0.0.v201403281430"/>
+<unit id="com.fasterxml.jackson.dataformat.jackson-dataformat-yaml" version="2.5.0.v201504151636"/>
+<unit id="com.fasterxml.jackson.core.jackson-annotations" version="2.5.0.v201504151636"/>
+<unit id="org.yaml.snakeyaml" version="1.14.0.v201505061500"/>
+<unit id="com.google.guava.source" version="15.0.0.v201403281430"/>
+<unit id="com.fasterxml.jackson.core.jackson-databind" version="2.5.0.v201504151636"/>
+<unit id="com.fasterxml.jackson.core.jackson-core" version="2.5.0.v201504151636"/>
+<repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20160221192158/repository"/>
+</location>
+</locations>
+<targetJRE path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+</target>

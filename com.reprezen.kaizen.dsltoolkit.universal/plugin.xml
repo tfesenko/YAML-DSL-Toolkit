@@ -8,7 +8,7 @@
             contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor"
             default="false"
             id="com.reprezen.kaizen.editor.jsonschema.editor"
-            name="JSON Schema v4 Editor"
+            name="Universal YAML Editor (KaiZen YAML DSL toolkit)"
             symbolicFontName="com.reprezen.kaizen.editor.jsonschema.editor.textfont">
          <contentTypeBinding
                contentTypeId="com.reprezen.kaizen.editor.jsonschema.editor.contenttype.yaml">

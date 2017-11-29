@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.reprezen.kaizen.dsltoolkit.feature_0.8.0.qualifier.jar" id="com.reprezen.kaizen.dsltoolkit.feature" version="0.8.0.qualifier">
+      <category name="com.reprezen.kaizen.dsltoolkit"/>
+   </feature>
+   <category-def name="com.reprezen.kaizen.dsltoolkit" label="KaiZen YAML DSL toolkit"/>
+</site>
